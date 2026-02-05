@@ -2,8 +2,8 @@
   "name": "stephen-king-react",
   "version": "1.0.0",
   "private": true,
-  "description": "Aplicación React que consume la API de Stephen King",
-  "author": "Tu Nombre",
+  "description": "Aplicación React que consume la API de Stephen King para mostrar información sobre sus libros",
+  "author": "Tu nombre",
   "homepage": ".",
   "dependencies": {
     "react": "^18.2.0",
@@ -36,4 +36,3 @@
     ]
   }
 }
-
