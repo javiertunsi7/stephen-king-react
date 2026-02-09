@@ -1,7 +1,5 @@
 # 📚 Stephen King - React App
 
-![Stephen King Banner](https://via.placeholder.com/1200x300/141414/B11212?text=Stephen+King+-+El+Maestro+del+Terror)
-
 > Aplicación web desarrollada en **React** que consume la API de Stephen King para mostrar información detallada sobre sus libros, villanos y adaptaciones cinematográficas.
 
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
@@ -30,7 +28,7 @@
 
 ## 🚀 Demo en Vivo
 
-🌐 **[Ver Demo en Vercel]()** *(Actualiza este enlace después del despliegue)*
+🌐 **[Ver Demo en Vercel](https://stephen-king-react-8zzg-n5q7w16w3-javiers-projects-187bb585.vercel.app/)**
 
 ---
 
@@ -137,7 +135,7 @@ Antes de comenzar, asegúrate de tener instalado:
 
 1. **Clona el repositorio**
 ```bash
-git clone https://github.com/tu-usuario/stephen-king-react.git
+git clone https://github.com/javiertunsi7/stephen-king-react.git
 cd stephen-king-react
 ```
 
@@ -262,11 +260,11 @@ Este proyecto consume la **Stephen King API**:
 
 ### Paleta de Colores
 ```css
---colorPrimary: #ffffff;      /* Blanco */
---colorSecondary: #811212;    /* Rojo oscuro */
---colorBackground: #141414;   /* Negro carbón */
---colorAccent: #b11212;       /* Rojo brillante */
---colorGold: #ffd700;         /* Dorado */
+--colorPrimary: #ffffff;      
+--colorSecondary: #811212;    
+--colorBackground: #141414;   
+--colorAccent: #b11212;       
+--colorGold: #ffd700;        
 ```
 
 ### Tipografías
@@ -277,13 +275,13 @@ Este proyecto consume la **Stephen King API**:
 
 ### Responsive Breakpoints
 ```css
-/* Móvil */
+
 @media (max-width: 576px) { ... }
 
-/* Tablet */
+
 @media (min-width: 577px) and (max-width: 992px) { ... }
 
-/* Desktop */
+
 @media (min-width: 993px) { ... }
 ```
 
@@ -313,10 +311,10 @@ Pie de página con enlaces, redes sociales, newsletter y documentación legal.
 
 ## 🧪 Testing
 ```bash
-# Ejecutar tests
+
 npm test
 
-# Ejecutar tests con cobertura
+
 npm test -- --coverage
 ```
 
