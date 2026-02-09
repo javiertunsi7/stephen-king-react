@@ -99,4 +99,4 @@ class StephenKingService {
   }
 }
 
-export default new StephenKingService();
+export default new StephenKingService;
