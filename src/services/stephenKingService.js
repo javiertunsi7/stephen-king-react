@@ -99,4 +99,5 @@ class StephenKingService {
   }
 }
 
-export default new StephenKingService;
+const stephenKingServiceInstance = new StephenKingService();
+export default stephenKingServiceInstance;
