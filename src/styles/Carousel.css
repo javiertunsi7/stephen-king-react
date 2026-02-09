@@ -1,0 +1,99 @@
+video {
+  width: 100%;
+}
+
+#bannerStephenKing {
+  background-color: #141414;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#carrusel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+#video {
+  display: block;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.buttonControlSlide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.buttonControlSlide:hover {
+  background: rgba(139, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.buttonControlSlide:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+#buttonPrev {
+  left: 30px;
+}
+
+#buttonNext {
+  right: 30px;
+}
+
+@media (min-width: 768px) {
+  #carrusel {
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  #video {
+    border-radius: 20px;
+  }
+
+  .buttonControlSlide i {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  #video {
+    width: 70%;
+    background-color: black;
+  }
+
+  .buttonControlSlide i {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .buttonControlSlide {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #buttonPrev {
+    left: 10px;
+  }
+
+  #buttonNext {
+    right: 10px;
+  }
+}

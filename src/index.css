@@ -12,10 +12,8 @@
 }
 
 body {
-  background-image: url('/images/background/backgroundpage1.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #1a0505;
+  background: linear-gradient(135deg, #1a0505 0%, #300303 50%, #1a0505 100%);
   color: var(--colorPrimary);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
