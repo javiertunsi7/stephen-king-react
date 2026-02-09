@@ -12,6 +12,9 @@ const Header = () => {
                 src="/images/logo/StephenKingLogo.png"
                 alt="Stephen King Logo"
                 className="logoSize"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                }}
               />
             </a>
             <h1 className="letterSpacing ms-4">STEPHEN KING</h1>
@@ -26,6 +29,11 @@ const Header = () => {
           </button>
           <div className="navbar-collapse collapse justify-content-around col-6" id="menu">
             <ul className="navbar-nav d-flex justify-content-around w-100">
+              <li className="nav-item text-center">
+                <a href="#about-author" className="nav-link text-white">
+                  Autor
+                </a>
+              </li>
               <li className="nav-item text-center">
                 <a href="#top-ten" className="nav-link text-white">
                   Top 10

@@ -1,0 +1,193 @@
+.about-author-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #1a0505 0%, #300303 50%, #1a0505 100%);
+  margin: 2rem 0;
+}
+
+.about-author-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-author-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  color: #6a0f1a;
+  background: rgba(231, 222, 215, 0.7);
+  padding: 15px 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(3px);
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.author-info {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.author-image {
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(139, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.author-image:hover {
+  transform: scale(1.05);
+}
+
+.author-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.author-description {
+  background: rgba(20, 20, 20, 0.8);
+  padding: 2.5rem;
+  border-radius: 15px;
+  border: 2px solid rgba(139, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.author-name {
+  font-family: "Creepster", cursive;
+  font-size: 2.5rem;
+  color: #b11212;
+  margin-bottom: 0.5rem;
+}
+
+.author-subtitle {
+  font-family: "Cinzel", serif;
+  font-size: 1.3rem;
+  color: #ffd700;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.author-bio p {
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #f1f1f1;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.author-bio strong {
+  color: #b11212;
+}
+
+.author-bio em {
+  color: #ffd700;
+}
+
+.author-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background: rgba(139, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(139, 0, 0, 0.3);
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-family: "Creepster", cursive;
+  font-size: 2.5rem;
+  color: #b11212;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  display: block;
+  font-family: "Cinzel", serif;
+  font-size: 0.9rem;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .author-info {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .author-image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .author-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-author-section {
+    padding: 2rem 0;
+  }
+
+  .about-author-title {
+    font-size: 2rem;
+    padding: 12px 20px;
+  }
+
+  .author-name {
+    font-size: 2rem;
+  }
+
+  .author-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .author-description {
+    padding: 1.5rem;
+  }
+
+  .author-stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-author-content {
+    padding: 0 1rem;
+  }
+
+  .about-author-title {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+  }
+
+  .author-name {
+    font-size: 1.7rem;
+  }
+
+  .author-bio p {
+    font-size: 0.95rem;
+  }
+}
